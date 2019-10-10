@@ -1,0 +1,54 @@
+/* 主容器 */
+.container {
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: relative;
+}
+
+/* span标签 */
+.span-style {
+    color: green;
+}
+
+/* img标签 */
+.img-style {
+    width: "50%";
+    height: "50%";
+    position: "50%";
+}
+
+/* container-1标签 */
+.container-1 {
+    display: none;
+}
+
+
+.container-2 {
+    background: #ccc;
+    width: 2000px;
+    height: 2000px;
+}
+
+#circle-1 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: red;
+    margin-left: 10px;
+}
+
+@keyframes red-to-green {
+    from {
+        background: red;
+    }
+
+    to {
+        background: green;
+    }
+
+}
+
+#circle-1:hover {
+    background: yellow
+}

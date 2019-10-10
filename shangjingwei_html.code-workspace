@@ -1,0 +1,15 @@
+{
+	"folders": [
+        {
+            "name": "shougan_programs",
+            "path": "/Users/shangjingwei/Documents/GitHub/shougan_programs"
+        },
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "html",
+        "git.ignoreLimitWarning": true
+    }
+}
