@@ -2,18 +2,28 @@
 <html lang="en">
 
 <head>
-    <title>不管用了现在应该管用了</title>
+    <title>Test Page</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="./css/index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- 本地完全版Vue.js 用根目录时会出现读取不到js的情况 -->
+    <script src="./js/vue.js"></script>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
 </head>
 
 <body>
-    <div class="container-1">
+
+    <!-- 第一个框体,排版 -->
+    <!-- <div class="container-1">
         <div style="border: 1px solid #ccc;margin-bottom: 50px;padding-left: 50px;">
             <h1>用户手册</h1>
             <ul>
@@ -37,15 +47,44 @@
         </div>
 
         <img src="./images/dog.jpg" alt="this is a dog!" class="img-style" align="top">
+    </div> -->
+
+    <!-- 第二个框体,动画 -->
+    <!-- <div class="container-2">
+        <div class="container-2">
+            <div id="circle-1"></div>
+        </div>
+        <button id="run-circle">Run</button>
+    </div> -->
+
+    <!-- 第三个框体,Vue -->
+    <!-- <div class="container-3">
+        <div id="newvm">
+            ***a***{{a}}
+            <p v-if="seen">***seen***可以看到吗?</p>
+            <span v-bind:title="msg">***msg***鼠标悬停可以看到的文字</span>
+            <ul>
+                <li v-for="todo in todos">***todo***{{todo.text}}</li>
+            </ul>
+            <input type="text" v-model="a">
+            <p>***b***{{b}}</p>
+            <p>***c***{{c}}</p>
+            /***v-once插入一下,不可以改变***/
+            <p v-once>***d***{{d}}</p>
+            <button id="c-button" v-on:click="submitButton">submit</button>
+            <div class="sheng" style="width: 500px;height: 100px;background: red;opacity: 30%;"></div>
+        </div>
+    </div> -->
+
+
+    <!-- 第四个框体,CSS权威指南第三版 -->
+    <div class="container-4">
+        <p>
+            <em>测试字体</em>
+        </p>
+        <strong>测试粗体</strong><a>测试换行</a>
     </div>
 
-
-
-    <div class="container-2">
-        <div id="circle-1"></div>
-    </div>
-    <button id="run-circle">Run</button>
-    <!-- <script src="./dist/bundle.js"></script> -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -58,7 +97,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/lodash@4.16.6"></script>
+    <!-- 本地JS文件 -->
     <script src="./bundle.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

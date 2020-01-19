@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 /* 主容器 */
 .container {
     width: 100px;
@@ -30,6 +35,13 @@
     height: 2000px;
 }
 
+
+.container-4 {
+    background: #ccc;
+    width: 2000px;
+    height: 2000px;
+}
+
 #circle-1 {
     border-radius: 50%;
     width: 200px;
@@ -37,6 +49,15 @@
     background: red;
     margin-left: 10px;
 }
+
+#c-button {
+    width: 500px;
+    height: 100px;
+    background: #cccccc;
+}
+
+
+
 
 @keyframes red-to-green {
     from {
@@ -47,8 +68,4 @@
         background: green;
     }
 
-}
-
-#circle-1:hover {
-    background: yellow
 }

@@ -81,53 +81,77 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../webpack/main.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./css/index.css":
-/*!***********************!*\
-  !*** ./css/index.css ***!
-  \***********************/
+/***/ "../webpack/css/index.css":
+/*!********************************!*\
+  !*** ../webpack/css/index.css ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!./index.css */ \"./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!./css/index.css\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../node_modules/_style-loader@1.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/_style-loader@1.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./css/index.css?");
+eval("var content = __webpack_require__(/*! !../../Webpack/node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!./index.css */ \"./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!../webpack/css/index.css\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../Webpack/node_modules/_style-loader@1.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/_style-loader@1.0.0@style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///../webpack/css/index.css?");
 
 /***/ }),
 
-/***/ "./images/dog.jpg":
-/*!************************!*\
-  !*** ./images/dog.jpg ***!
-  \************************/
+/***/ "../webpack/images/dog.jpg":
+/*!*********************************!*\
+  !*** ../webpack/images/dog.jpg ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"8468eebf6f8529ff6a09bb106b27af07.jpg\";\n\n//# sourceURL=webpack:///./images/dog.jpg?");
+eval("module.exports = __webpack_require__.p + \"8468eebf6f8529ff6a09bb106b27af07.jpg\";\n\n//# sourceURL=webpack:///../webpack/images/dog.jpg?");
 
 /***/ }),
 
-/***/ "./main.js":
-/*!*****************!*\
-  !*** ./main.js ***!
-  \*****************/
+/***/ "../webpack/main.js":
+/*!**************************!*\
+  !*** ../webpack/main.js ***!
+  \**************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.css */ \"./css/index.css\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_dog_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/dog.jpg */ \"./images/dog.jpg\");\n/* harmony import */ var _images_dog_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_dog_jpg__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n// alert('aaaaa')\nfunction component() {\n\n    var element = document.createElement('div');\n    var myIcon = new Image();\n    myIcon.src = _images_dog_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;\n    Element.appendChild(myIcon);\n\n    return element;\n}\n\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.css */ \"../webpack/css/index.css\");\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_index_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_dog_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/dog.jpg */ \"../webpack/images/dog.jpg\");\n/* harmony import */ var _images_dog_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_dog_jpg__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _ansi_colors_3_2_4_ansi_colors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! _ansi-colors@3.2.4@ansi-colors */ \"../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/index.js\");\n/* harmony import */ var _ansi_colors_3_2_4_ansi_colors__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_ansi_colors_3_2_4_ansi_colors__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nfunction runCircle() {\n    $('#circle-1').css({\n        \"transform\": \"translateX(1000px)\",\n        \"transition\": \"transform 4s\",\n        \"animation\": \"red-to-green 4s\",\n        \"background\": \"green\"\n    })\n}\n\nfunction component() {\n\n    var element = document.createElement('div');\n    var myIcon = new Image();\n    myIcon.src = _images_dog_jpg__WEBPACK_IMPORTED_MODULE_1___default.a;\n    Element.appendChild(myIcon);\n\n    return element;\n}\n\n$('#run-circle').on('click', function () {\n    runCircle()\n})\n\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///../webpack/main.js?");
 
 /***/ }),
 
-/***/ "./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!./css/index.css":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!./css/index.css ***!
-  \*******************************************************************************/
+/***/ "../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/index.js":
+/*!***********************************************************************!*\
+  !*** ../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/index.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/_css-loader@3.2.0@css-loader/dist/runtime/api.js */ \"./node_modules/_css-loader@3.2.0@css-loader/dist/runtime/api.js\")(false);\n// Imports\nvar getUrl = __webpack_require__(/*! ../node_modules/_css-loader@3.2.0@css-loader/dist/runtime/getUrl.js */ \"./node_modules/_css-loader@3.2.0@css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL___0___ = getUrl(__webpack_require__(/*! ../images/dog.jpg */ \"./images/dog.jpg\"));\n// Module\nexports.push([module.i, \"    /*三角形*/\\n    .traingle {\\n        width: 0;\\n        height: 0;\\n        border-left: 50px solid transparent;\\n        border-right: 50px solid transparent;\\n        border-bottom: 100px solid yellowgreen;\\n    }\\n\\n    /**/\\n    .notching {\\n        width: 40px;\\n        height: 40px;\\n        padding: 40px;\\n        background: linear-gradient(135deg, transparent 15px, yellowgreen 0) top left;\\n    }\\n\\n    #mycanvas {\\n        border: 1px solid rgb(255, 0, 0);\\n    }\\n\\n    /* body {\\n        background: red\\n    } */\\n\\n    body {\\n        background: url(\" + ___CSS_LOADER_URL___0___ + \")\\n    }\\n\\n\\n    /* 主容器 */\\n    .container {\\n        width: 100px;\\n        height: 100px;\\n        background: green;\\n        position: relative;\\n    }\\n\\n    /* span标签 */\\n    .span-style {\\n        color: green;\\n    }\\n\\n    /* img标签 */\\n    .img-style {\\n        width: \\\"50%\\\";\\n        height: \\\"50%\\\";\\n        position: \\\"50%\\\";\\n    }\", \"\"]);\n\n\n//# sourceURL=webpack:///./css/index.css?./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js");
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nconst colors = { enabled: true, visible: true, styles: {}, keys: {} };\n\nif ('FORCE_COLOR' in process.env) {\n  colors.enabled = process.env.FORCE_COLOR !== '0';\n}\n\nconst ansi = style => {\n  style.open = `\\u001b[${style.codes[0]}m`;\n  style.close = `\\u001b[${style.codes[1]}m`;\n  style.regex = new RegExp(`\\\\u001b\\\\[${style.codes[1]}m`, 'g');\n  return style;\n};\n\nconst wrap = (style, str, nl) => {\n  let { open, close, regex } = style;\n  str = open + (str.includes(close) ? str.replace(regex, close + open) : str) + close;\n  // see https://github.com/chalk/chalk/pull/92, thanks to the\n  // chalk contributors for this fix. However, we've confirmed that\n  // this issue is also present in Windows terminals\n  return nl ? str.replace(/\\r?\\n/g, `${close}$&${open}`) : str;\n};\n\nconst style = (input, stack) => {\n  if (input === '' || input == null) return '';\n  if (colors.enabled === false) return input;\n  if (colors.visible === false) return '';\n  let str = '' + input;\n  let nl = str.includes('\\n');\n  let n = stack.length;\n  while (n-- > 0) str = wrap(colors.styles[stack[n]], str, nl);\n  return str;\n};\n\nconst define = (name, codes, type) => {\n  colors.styles[name] = ansi({ name, codes });\n  let t = colors.keys[type] || (colors.keys[type] = []);\n  t.push(name);\n\n  Reflect.defineProperty(colors, name, {\n    get() {\n      let color = input => style(input, color.stack);\n      Reflect.setPrototypeOf(color, colors);\n      color.stack = this.stack ? this.stack.concat(name) : [name];\n      return color;\n    }\n  });\n};\n\ndefine('reset', [0, 0], 'modifier');\ndefine('bold', [1, 22], 'modifier');\ndefine('dim', [2, 22], 'modifier');\ndefine('italic', [3, 23], 'modifier');\ndefine('underline', [4, 24], 'modifier');\ndefine('inverse', [7, 27], 'modifier');\ndefine('hidden', [8, 28], 'modifier');\ndefine('strikethrough', [9, 29], 'modifier');\n\ndefine('black', [30, 39], 'color');\ndefine('red', [31, 39], 'color');\ndefine('green', [32, 39], 'color');\ndefine('yellow', [33, 39], 'color');\ndefine('blue', [34, 39], 'color');\ndefine('magenta', [35, 39], 'color');\ndefine('cyan', [36, 39], 'color');\ndefine('white', [37, 39], 'color');\ndefine('gray', [90, 39], 'color');\ndefine('grey', [90, 39], 'color');\n\ndefine('bgBlack', [40, 49], 'bg');\ndefine('bgRed', [41, 49], 'bg');\ndefine('bgGreen', [42, 49], 'bg');\ndefine('bgYellow', [43, 49], 'bg');\ndefine('bgBlue', [44, 49], 'bg');\ndefine('bgMagenta', [45, 49], 'bg');\ndefine('bgCyan', [46, 49], 'bg');\ndefine('bgWhite', [47, 49], 'bg');\n\ndefine('blackBright', [90, 39], 'bright');\ndefine('redBright', [91, 39], 'bright');\ndefine('greenBright', [92, 39], 'bright');\ndefine('yellowBright', [93, 39], 'bright');\ndefine('blueBright', [94, 39], 'bright');\ndefine('magentaBright', [95, 39], 'bright');\ndefine('cyanBright', [96, 39], 'bright');\ndefine('whiteBright', [97, 39], 'bright');\n\ndefine('bgBlackBright', [100, 49], 'bgBright');\ndefine('bgRedBright', [101, 49], 'bgBright');\ndefine('bgGreenBright', [102, 49], 'bgBright');\ndefine('bgYellowBright', [103, 49], 'bgBright');\ndefine('bgBlueBright', [104, 49], 'bgBright');\ndefine('bgMagentaBright', [105, 49], 'bgBright');\ndefine('bgCyanBright', [106, 49], 'bgBright');\ndefine('bgWhiteBright', [107, 49], 'bgBright');\n\n/* eslint-disable no-control-regex */\n// this is a modified, optimized version of\n// https://github.com/chalk/ansi-regex (MIT License)\nconst re = colors.ansiRegex = /[\\u001b\\u009b][[\\]#;?()]*(?:(?:(?:[^\\W_]*;?[^\\W_]*)\\u0007)|(?:(?:[0-9]{1,4}(;[0-9]{0,4})*)?[~0-9=<>cf-nqrtyA-PRZ]))/g;\n\ncolors.hasColor = colors.hasAnsi = str => {\n  re.lastIndex = 0;\n  return !!str && typeof str === 'string' && re.test(str);\n};\n\ncolors.unstyle = str => {\n  re.lastIndex = 0;\n  return typeof str === 'string' ? str.replace(re, '') : str;\n};\n\ncolors.none = colors.clear = colors.noop = str => str; // no-op, for programmatic usage\ncolors.stripColor = colors.unstyle;\ncolors.symbols = __webpack_require__(/*! ./symbols */ \"../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/symbols.js\");\ncolors.define = define;\nmodule.exports = colors;\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../Webpack/node_modules/_process@0.11.10@process/browser.js */ \"./node_modules/_process@0.11.10@process/browser.js\")))\n\n//# sourceURL=webpack:///../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/index.js?");
+
+/***/ }),
+
+/***/ "../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/symbols.js":
+/*!*************************************************************************!*\
+  !*** ../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/symbols.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(process) {\n\nconst isWindows = process.platform === 'win32';\nconst isLinux = process.platform === 'linux';\n\nconst windows = {\n  bullet: '•',\n  check: '√',\n  cross: '×',\n  ellipsis: '...',\n  heart: '❤',\n  info: 'i',\n  line: '─',\n  middot: '·',\n  minus: '－',\n  plus: '＋',\n  question: '?',\n  questionSmall: '﹖',\n  pointer: '>',\n  pointerSmall: '»',\n  warning: '‼'\n};\n\nconst other = {\n  ballotCross: '✘',\n  bullet: '•',\n  check: '✔',\n  cross: '✖',\n  ellipsis: '…',\n  heart: '❤',\n  info: 'ℹ',\n  line: '─',\n  middot: '·',\n  minus: '－',\n  plus: '＋',\n  question: '?',\n  questionFull: '？',\n  questionSmall: '﹖',\n  pointer: isLinux ? '▸' : '❯',\n  pointerSmall: isLinux ? '‣' : '›',\n  warning: '⚠'\n};\n\nmodule.exports = isWindows ? windows : other;\nReflect.defineProperty(module.exports, 'windows', { enumerable: false, value: windows });\nReflect.defineProperty(module.exports, 'other', { enumerable: false, value: other });\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../Webpack/node_modules/_process@0.11.10@process/browser.js */ \"./node_modules/_process@0.11.10@process/browser.js\")))\n\n//# sourceURL=webpack:///../webpack/node_modules/_ansi-colors@3.2.4@ansi-colors/symbols.js?");
+
+/***/ }),
+
+/***/ "./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!../webpack/css/index.css":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js!../webpack/css/index.css ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../Webpack/node_modules/_css-loader@3.2.0@css-loader/dist/runtime/api.js */ \"./node_modules/_css-loader@3.2.0@css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"/* 主容器 */\\n.container {\\n    width: 100px;\\n    height: 100px;\\n    background: green;\\n    position: relative;\\n}\\n\\n/* span标签 */\\n.span-style {\\n    color: green;\\n}\\n\\n/* img标签 */\\n.img-style {\\n    width: \\\"50%\\\";\\n    height: \\\"50%\\\";\\n    position: \\\"50%\\\";\\n}\\n\\n/* container-1标签 */\\n.container-1 {\\n    display: none;\\n}\\n\\n\\n.container-2 {\\n    background: #ccc;\\n    width: 2000px;\\n    height: 2000px;\\n}\\n\\n#circle-1 {\\n    border-radius: 50%;\\n    width: 200px;\\n    height: 200px;\\n    background: red;\\n    margin-left: 10px;\\n}\\n\\n#c-button {\\n    width: 500px;\\n    height: 100px;\\n    background: #cccccc;\\n}\\n\\n\\n\\n@keyframes red-to-green {\\n    from {\\n        background: red;\\n    }\\n\\n    to {\\n        background: green;\\n    }\\n\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///../webpack/css/index.css?./node_modules/_css-loader@3.2.0@css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -143,15 +167,14 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 
 /***/ }),
 
-/***/ "./node_modules/_css-loader@3.2.0@css-loader/dist/runtime/getUrl.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/_css-loader@3.2.0@css-loader/dist/runtime/getUrl.js ***!
-  \**************************************************************************/
+/***/ "./node_modules/_process@0.11.10@process/browser.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/_process@0.11.10@process/browser.js ***!
+  \**********************************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-eval("\n\nmodule.exports = function (url, needQuotes) {\n  // eslint-disable-next-line no-underscore-dangle, no-param-reassign\n  url = url.__esModule ? url.default : url;\n\n  if (typeof url !== 'string') {\n    return url;\n  } // If url is already wrapped in quotes, remove them\n\n\n  if (/^['\"].*['\"]$/.test(url)) {\n    // eslint-disable-next-line no-param-reassign\n    url = url.slice(1, -1);\n  } // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n\n\n  if (/[\"'() \\t\\n]/.test(url) || needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, '\\\\n'), \"\\\"\");\n  }\n\n  return url;\n};\n\n//# sourceURL=webpack:///./node_modules/_css-loader@3.2.0@css-loader/dist/runtime/getUrl.js?");
+eval("// shim for using process in browser\nvar process = module.exports = {};\n\n// cached from whatever global is present so that test runners that stub it\n// don't break things.  But we need to wrap it in a try catch in case it is\n// wrapped in strict mode code which doesn't define any globals.  It's inside a\n// function because try/catches deoptimize in certain engines.\n\nvar cachedSetTimeout;\nvar cachedClearTimeout;\n\nfunction defaultSetTimout() {\n    throw new Error('setTimeout has not been defined');\n}\nfunction defaultClearTimeout () {\n    throw new Error('clearTimeout has not been defined');\n}\n(function () {\n    try {\n        if (typeof setTimeout === 'function') {\n            cachedSetTimeout = setTimeout;\n        } else {\n            cachedSetTimeout = defaultSetTimout;\n        }\n    } catch (e) {\n        cachedSetTimeout = defaultSetTimout;\n    }\n    try {\n        if (typeof clearTimeout === 'function') {\n            cachedClearTimeout = clearTimeout;\n        } else {\n            cachedClearTimeout = defaultClearTimeout;\n        }\n    } catch (e) {\n        cachedClearTimeout = defaultClearTimeout;\n    }\n} ())\nfunction runTimeout(fun) {\n    if (cachedSetTimeout === setTimeout) {\n        //normal enviroments in sane situations\n        return setTimeout(fun, 0);\n    }\n    // if setTimeout wasn't available but was latter defined\n    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {\n        cachedSetTimeout = setTimeout;\n        return setTimeout(fun, 0);\n    }\n    try {\n        // when when somebody has screwed with setTimeout but no I.E. maddness\n        return cachedSetTimeout(fun, 0);\n    } catch(e){\n        try {\n            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally\n            return cachedSetTimeout.call(null, fun, 0);\n        } catch(e){\n            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error\n            return cachedSetTimeout.call(this, fun, 0);\n        }\n    }\n\n\n}\nfunction runClearTimeout(marker) {\n    if (cachedClearTimeout === clearTimeout) {\n        //normal enviroments in sane situations\n        return clearTimeout(marker);\n    }\n    // if clearTimeout wasn't available but was latter defined\n    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {\n        cachedClearTimeout = clearTimeout;\n        return clearTimeout(marker);\n    }\n    try {\n        // when when somebody has screwed with setTimeout but no I.E. maddness\n        return cachedClearTimeout(marker);\n    } catch (e){\n        try {\n            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally\n            return cachedClearTimeout.call(null, marker);\n        } catch (e){\n            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.\n            // Some versions of I.E. have different rules for clearTimeout vs setTimeout\n            return cachedClearTimeout.call(this, marker);\n        }\n    }\n\n\n\n}\nvar queue = [];\nvar draining = false;\nvar currentQueue;\nvar queueIndex = -1;\n\nfunction cleanUpNextTick() {\n    if (!draining || !currentQueue) {\n        return;\n    }\n    draining = false;\n    if (currentQueue.length) {\n        queue = currentQueue.concat(queue);\n    } else {\n        queueIndex = -1;\n    }\n    if (queue.length) {\n        drainQueue();\n    }\n}\n\nfunction drainQueue() {\n    if (draining) {\n        return;\n    }\n    var timeout = runTimeout(cleanUpNextTick);\n    draining = true;\n\n    var len = queue.length;\n    while(len) {\n        currentQueue = queue;\n        queue = [];\n        while (++queueIndex < len) {\n            if (currentQueue) {\n                currentQueue[queueIndex].run();\n            }\n        }\n        queueIndex = -1;\n        len = queue.length;\n    }\n    currentQueue = null;\n    draining = false;\n    runClearTimeout(timeout);\n}\n\nprocess.nextTick = function (fun) {\n    var args = new Array(arguments.length - 1);\n    if (arguments.length > 1) {\n        for (var i = 1; i < arguments.length; i++) {\n            args[i - 1] = arguments[i];\n        }\n    }\n    queue.push(new Item(fun, args));\n    if (queue.length === 1 && !draining) {\n        runTimeout(drainQueue);\n    }\n};\n\n// v8 likes predictible objects\nfunction Item(fun, array) {\n    this.fun = fun;\n    this.array = array;\n}\nItem.prototype.run = function () {\n    this.fun.apply(null, this.array);\n};\nprocess.title = 'browser';\nprocess.browser = true;\nprocess.env = {};\nprocess.argv = [];\nprocess.version = ''; // empty string to avoid regexp issues\nprocess.versions = {};\n\nfunction noop() {}\n\nprocess.on = noop;\nprocess.addListener = noop;\nprocess.once = noop;\nprocess.off = noop;\nprocess.removeListener = noop;\nprocess.removeAllListeners = noop;\nprocess.emit = noop;\nprocess.prependListener = noop;\nprocess.prependOnceListener = noop;\n\nprocess.listeners = function (name) { return [] }\n\nprocess.binding = function (name) {\n    throw new Error('process.binding is not supported');\n};\n\nprocess.cwd = function () { return '/' };\nprocess.chdir = function (dir) {\n    throw new Error('process.chdir is not supported');\n};\nprocess.umask = function() { return 0; };\n\n\n//# sourceURL=webpack:///./node_modules/_process@0.11.10@process/browser.js?");
 
 /***/ }),
 

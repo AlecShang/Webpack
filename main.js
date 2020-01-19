@@ -4,7 +4,6 @@ import {
     red
 } from '_ansi-colors@3.2.4@ansi-colors';
 
-
 function runCircle() {
     $('#circle-1').css({
         "transform": "translateX(1000px)",
